@@ -1,0 +1,12 @@
+.page-footer {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: var(--footer-height);
+}
+
+.page-footer > p {
+  color: var(--grey);
+}

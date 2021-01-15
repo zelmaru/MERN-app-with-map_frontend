@@ -1,0 +1,24 @@
+/* create parallax scroll effect */
+
+.all-places__map {
+  position: relative;
+  top: 7rem;
+}
+
+.all-places__map,
+.all-places__place-list {
+  position: sticky;
+  width: 100%;
+  z-index: 1;
+}
+
+.all-places__place-list {
+  top: 0;
+  padding: 1rem 0 0 0;
+  background: linear-gradient(
+    to top,
+    var(--white-natural) calc(100% - 8rem),
+    transparent 100%
+  );
+  min-height: calc(100vh - 9rem);
+}

@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+
+* {
+  box-sizing: border-box;
+  --main-dark: #125f3c;
+  --main: #22b573;
+  /* --main-light: #32d88e; */
+  --main-lightest: #ddf9ec;
+  --text: #4d4d4d;
+  --grey: #979797;
+  --white: #fff;
+  --white-natural: #f7f7f7;
+  --darker-white: #ccc;
+  --footer-height: 3rem;
+  --box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  margin-top: 7rem;
+  position: relative;
+  min-height: calc(100vh - 7rem);
+  background: var(--white-natural);
+}
+
+main {
+  padding-bottom: var(--footer-height);
+  margin-top: 5rem;
+}
+
+h1,
+h2 {
+  color: var(--main-dark);
+}
+
+h3,
+h4,
+h5,
+p,
+span {
+  color: var(--text);
+}
+
+button {
+  outline: none;
+}
+
+.menu-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+.menu-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 500ms, transform 500ms;
+}
+.menu-exit {
+  opacity: 1;
+}
+.menu-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 500ms, transform 500ms;
+}
+
+.center {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
